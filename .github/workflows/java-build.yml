@@ -21,7 +21,7 @@ jobs:
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
-          java-version: '17'
+          java-version: ${{ var.JAVA_VERSION }}
 
       # after java has be installed, we can compile the java code
       - name: Compile HelloWorld.java
